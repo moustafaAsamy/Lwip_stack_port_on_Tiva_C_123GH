@@ -1,0 +1,15 @@
+/*
+ * main.h
+ *
+ *  Created on: Mar 29, 2021
+ *      Author: Lenovo PC
+ */
+
+
+
+#include <stdint.h>
+
+typedef int mem_size_t ;
+
+
+

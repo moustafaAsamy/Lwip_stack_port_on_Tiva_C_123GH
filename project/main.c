@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 29, 2021
+ *      Author: Lenovo PC
+ */
+
+
+#include "src/include/lwip/opt.h"
+#include "src/include/lwip/udp.h"
+#include "src/include/lwip/mem.h"
+#include "src/include/lwip/memp.h"
+#include "src/include/lwip/dns.h"
+
+
+int main()
+{
+    dns_init();
+}

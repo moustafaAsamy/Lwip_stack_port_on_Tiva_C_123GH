@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../ports/enc28j60.c \
+../ports/perf.c \
+../ports/sys_arch.c \
+../ports/systick.c 
+
+C_DEPS += \
+./ports/enc28j60.d \
+./ports/perf.d \
+./ports/sys_arch.d \
+./ports/systick.d 
+
+OBJS += \
+./ports/enc28j60.obj \
+./ports/perf.obj \
+./ports/sys_arch.obj \
+./ports/systick.obj 
+
+OBJS__QUOTED += \
+"ports\enc28j60.obj" \
+"ports\perf.obj" \
+"ports\sys_arch.obj" \
+"ports\systick.obj" 
+
+C_DEPS__QUOTED += \
+"ports\enc28j60.d" \
+"ports\perf.d" \
+"ports\sys_arch.d" \
+"ports\systick.d" 
+
+C_SRCS__QUOTED += \
+"../ports/enc28j60.c" \
+"../ports/perf.c" \
+"../ports/sys_arch.c" \
+"../ports/systick.c" 
+
+

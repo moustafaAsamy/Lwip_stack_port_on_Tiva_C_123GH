@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 29, 2021
+ *      Author: Lenovo PC
+ */
+
+
+
+typedef u16_t mem_size_t;
+int main()
+{
+
+}

@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 29, 2021
+ *      Author: Lenovo PC
+ */
+
+
+
+typedef int mem_size_t;
+int main()
+{
+
+}
