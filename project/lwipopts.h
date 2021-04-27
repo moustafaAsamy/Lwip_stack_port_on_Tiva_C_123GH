@@ -204,7 +204,7 @@
 // ---------- DNS options -----------
 //
 //*****************************************************************************
-#define LWIP_DNS                        1
+#define LWIP_DNS                        0
 #define DNS_TABLE_SIZE                  4
 #define DNS_MAX_NAME_LENGTH             256
 #define DNS_MAX_SERVERS                 2

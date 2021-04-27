@@ -1,34 +1,31 @@
 ******************************************************************************
-                  TI ARM Linker PC v16.9.6                     
+                  TI ARM Linker PC v18.12.1                    
 ******************************************************************************
->> Linked Tue Mar 30 12:14:03 2021
+>> Linked Tue Apr 27 12:50:17 2021
 
 OUTPUT FILE NAME:   <project.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 00008841
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 000002b1
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  00008ca0  00037360  R  X
-  SRAM                  20000000   00008000  00006d1b  000012e5  RW X
+  FLASH                 00000000   00040000  00000332  0003fcce  R  X
+  SRAM                  20000000   00008000  0000138c  00006c74  RW X
 
 
 SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00008ca0   00008ca0    r-x
+00000000    00000000    00000334   00000334    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    000087e0   000087e0    r-x .text
-  00008a4c    00008a4c    00000204   00000204    r-- .const
-  00008c50    00008c50    00000050   00000050    r-- .cinit
-20000000    20000000    00006d1e   00000000    rw-
-  20000000    20000000    0000026c   00000000    rw- .vtable
-  2000026c    2000026c    00005701   00000000    rw- .bss
-  20005970    20005970    00001388   00000000    rw- .stack
-  20006cf8    20006cf8    00000026   00000000    rw- .data
+  0000026c    0000026c    000000b2   000000b2    r-x .text
+  00000320    00000320    00000014   00000014    r-- .cinit
+20000000    20000000    0000138c   00000000    rw-
+  20000000    20000000    00001388   00000000    rw- .stack
+  20001388    20001388    00000004   00000000    rw- .bss
 
 
 SECTION ALLOCATION MAP
@@ -39,701 +36,130 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    000087e0     
-                  0000026c    00001b14     tcp_in.obj (.text)
-                  00001d80    000012e0     tcp.obj (.text)
-                  00003060    000010b8     tcp_out.obj (.text)
-                  00004118    00000c8c     etharp.obj (.text)
-                  00004da4    00000a7c     pbuf.obj (.text)
-                  00005820    00000804     dns.obj (.text)
-                  00006024    00000680     udp.obj (.text)
-                  000066a4    00000564     mem.obj (.text)
-                  00006c08    000004b8     ip.obj (.text)
-                  000070c0    000003c4     inet_chksum.obj (.text)
-                  00007484    000003c4     ip_addr.obj (.text)
-                  00007848    000003c0     interrupt.obj (.text)
-                  00007c08    000002bc     icmp.obj (.text)
-                  00007ec4    000002a4     timers.obj (.text)
-                  00008168    0000026c     raw.obj (.text)
-                  000083d4    00000210     memp.obj (.text)
-                  000085e4    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
-                  00008680    0000007a                                   : memset_t2.obj (.text)
-                  000086fa    00000002                                   : mpu_init.obj (.text)
-                  000086fc    00000070                                   : autoinit.obj (.text)
-                  0000876c    0000006c     def.obj (.text)
-                  000087d8    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_lzss.obj (.text:decompress:lzss)
-                  00008840    00000054                                   : boot.obj (.text)
-                  00008894    00000054                                   : exit.obj (.text)
-                  000088e8    0000004c                                   : cpy_tbl.obj (.text)
-                  00008934    0000003e     cpu.obj (.text)
-                  00008972    00000002     rtsv7M4_T_le_v4SPD16_eabi.lib : startup.obj (.text)
-                  00008974    00000028     sys_arch.obj (.text)
-                  0000899c    00000024     rtsv7M4_T_le_v4SPD16_eabi.lib : memcmp.obj (.text)
-                  000089c0    00000018                                   : args_main.obj (.text)
-                  000089d8    00000018                                   : strcmp.obj (.text)
-                  000089f0    00000014                                   : _lock.obj (.text)
-                  00008a04    00000014                                   : strlen.obj (.text)
-                  00008a18    0000000e                                   : copy_decompress_none.obj (.text:decompress:none)
-                  00008a26    0000000c                                   : copy_zero_init.obj (.text:decompress:ZI)
-                  00008a32    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
-                  00008a3e    0000000a     main.obj (.text)
-                  00008a48    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
+.text      0    0000026c    000000b2     
+                  0000026c    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  000002b0    00000034                                   : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  000002e4    00000014     main.obj (.text)
+                  000002f8    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  0000030a    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  00000316    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  0000031a    00000004                                   : exit.c.obj (.text:abort:abort)
 
-.const     0    00008a4c    00000204     
-                  00008a4c    0000009c     interrupt.obj (.const:g_pui32Regs)
-                  00008ae8    00000076     tcp.obj (.const:.string)
-                  00008b5e    00000002     --HOLE-- [fill = 0]
-                  00008b60    0000002c     tcp.obj (.const:tcp_state_str)
-                  00008b8c    00000020     interrupt.obj (.const:g_pui32Priority)
-                  00008bac    00000014     interrupt.obj (.const:g_pui32Dii16Regs)
-                  00008bc0    00000014     interrupt.obj (.const:g_pui32EnRegs)
-                  00008bd4    00000014     interrupt.obj (.const:g_pui32PendRegs)
-                  00008be8    00000014     interrupt.obj (.const:g_pui32UnpendRegs)
-                  00008bfc    00000010     memp.obj (.const:memp_num)
-                  00008c0c    00000010     memp.obj (.const:memp_sizes)
-                  00008c1c    00000010     tcp.obj (.const:tcp_pcb_lists)
-                  00008c2c    0000000d     tcp.obj (.const:.string:tcp_backoff)
-                  00008c39    00000007     tcp.obj (.const:.string:tcp_persist_backoff)
-                  00008c40    00000006     etharp.obj (.const:ethbroadcast)
-                  00008c46    00000006     etharp.obj (.const:ethzero)
-                  00008c4c    00000004     ip_addr.obj (.const:ip_addr_any)
-
-.cinit     0    00008c50    00000050     
-                  00008c50    00000019     (.cinit..data.load) [load image, compression = lzss]
-                  00008c69    00000003     --HOLE-- [fill = 0]
-                  00008c6c    0000000c     (__TI_handler_table)
-                  00008c78    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00008c80    00000008     (.cinit..vtable.load) [load image, compression = zero_init]
-                  00008c88    00000018     (__TI_cinit_table)
+.cinit     0    00000320    00000014     
+                  00000320    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00000328    00000004     (__TI_handler_table)
+                  0000032c    00000008     (__TI_cinit_table)
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
 
-.vtable    0    20000000    0000026c     UNINITIALIZED
-                  20000000    0000026c     interrupt.obj (.vtable)
+.bss       0    20001388    00000004     UNINITIALIZED
+                  20001388    00000004     (.common:ip_addr)
 
-.bss       0    2000026c    00005701     UNINITIALIZED
-                  2000026c    00002e0c     memp.obj (.bss:memp_memory)
-                  20003078    00002014     (.common:ram_heap)
-                  2000508c    00000460     dns.obj (.bss:dns_table)
-                  200054ec    00000204     dns.obj (.bss:dns_payload_buffer)
-                  200056f0    000000ea     (.common:lwip_stats)
-                  200057da    00000002     ip.obj (.bss)
-                  200057dc    000000c8     etharp.obj (.bss:arp_table)
-                  200058a4    00000020     memp.obj (.bss:memp_tab)
-                  200058c4    0000001c     tcp_in.obj (.bss)
-                  200058e0    00000010     tcp_in.obj (.bss:inseg)
-                  200058f0    00000010     ip_addr.obj (.bss:str$1)
-                  20005900    0000000c     dns.obj (.bss)
-                  2000590c    0000000c     mem.obj (.bss)
-                  20005918    0000000c     timers.obj (.bss)
-                  20005924    00000008     dns.obj (.bss:dns_servers)
-                  2000592c    00000004     raw.obj (.bss)
-                  20005930    00000004     (.common:current_header)
-                  20005934    00000004     (.common:current_iphdr_dest)
-                  20005938    00000004     (.common:current_iphdr_src)
-                  2000593c    00000004     (.common:current_netif)
-                  20005940    00000004     (.common:netif_default)
-                  20005944    00000004     (.common:netif_list)
-                  20005948    00000004     (.common:tcp_active_pcbs)
-                  2000594c    00000004     (.common:tcp_bound_pcbs)
-                  20005950    00000004     (.common:tcp_input_pcb)
-                  20005954    00000004     (.common:tcp_listen_pcbs)
-                  20005958    00000004     (.common:tcp_ticks)
-                  2000595c    00000004     (.common:tcp_tmp_pcb)
-                  20005960    00000004     (.common:tcp_tw_pcbs)
-                  20005964    00000004     (.common:udp_pcbs)
-                  20005968    00000002     tcp.obj (.bss)
-                  2000596a    00000001     etharp.obj (.bss)
-                  2000596b    00000001     (.common:pbuf_free_ooseq_pending)
-                  2000596c    00000001     (.common:tcp_active_pcbs_changed)
-
-.stack     0    20005970    00001388     UNINITIALIZED
-                  20005970    00001388     --HOLE--
-
-.data      0    20006cf8    00000026     UNINITIALIZED
-                  20006cf8    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.data:$O1$$)
-                  20006d04    00000008                                   : _lock.obj (.data:$O1$$)
-                  20006d0c    00000008     tcp.obj (.data)
-                  20006d14    00000004     lwiplib.obj (.data)
-                  20006d18    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : stkdepth_vars.obj (.data)
-                  20006d1c    00000002     udp.obj (.data)
+.stack     0    20000000    00001388     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    00001384     --HOLE--
 
 MODULE SUMMARY
 
-       Module                         code    ro data   rw data
-       ------                         ----    -------   -------
+       Module                         code   ro data   rw data
+       ------                         ----   -------   -------
     .\
-       tm4c123gh6pm_startup_ccs.obj   12      620       0      
-       main.obj                       10      0         0      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         22      620       0      
-                                                               
-    .\driverlib\
-       interrupt.obj                  960     268       620    
-       cpu.obj                        62      0         0      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         1022    268       620    
-                                                               
-    .\ports\
-       sys_arch.obj                   40      0         0      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         40      0         0      
-                                                               
-    .\src\core\
-       memp.obj                       528     32        11820  
-       mem.obj                        1380    0         8224   
-       tcp_in.obj                     6932    0         48     
-       tcp.obj                        4832    198       35     
-       tcp_out.obj                    4280    0         0      
-       dns.obj                        2052    0         1656   
-       etharp.obj                     3212    12        201    
-       pbuf.obj                       2684    0         1      
-       udp.obj                        1664    0         6      
-       timers.obj                     676     0         12     
-       raw.obj                        620     0         4      
-       stats.obj                      0       0         234    
-       def.obj                        108     0         0      
-       netif.obj                      0       0         8      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         28968   242       22249  
-                                                               
-    .\src\core\ipv4\
-       ip.obj                         1208    0         18     
-       ip_addr.obj                    964     4         16     
-       inet_chksum.obj                964     0         0      
-       icmp.obj                       700     0         0      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         3836    4         34     
-                                                               
-    .\utils\
-       lwiplib.obj                    0       0         4      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         0       0         4      
-                                                               
-    C:\ti\ti-cgt-arm_16.9.6.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
-       memcpy_t2.obj                  156     0         0      
-       memset_t2.obj                  122     0         0      
-       autoinit.obj                   112     0         0      
-       copy_decompress_lzss.obj       104     0         0      
-       exit.obj                       84      0         12     
-       boot.obj                       84      0         0      
-       cpy_tbl.obj                    76      0         0      
-       memcmp.obj                     36      0         0      
-       _lock.obj                      20      0         8      
-       args_main.obj                  24      0         0      
-       strcmp.obj                     24      0         0      
-       strlen.obj                     20      0         0      
-       copy_decompress_none.obj       14      0         0      
-       copy_zero_init.obj             12      0         0      
-       pre_init.obj                   4       0         0      
-       stkdepth_vars.obj              0       0         4      
-       mpu_init.obj                   2       0         0      
-       startup.obj                    2       0         0      
-    +--+------------------------------+-------+---------+---------+
-       Total:                         896     0         24     
-                                                               
-       Stack:                         0       0         5000   
-       Linker Generated:              0       77        0      
-    +--+------------------------------+-------+---------+---------+
-       Grand Total:                   34784   1211      27931  
+       tm4c123gh6pm_startup_ccs.obj   12     620       0      
+       main.obj                       20     0         4      
+    +--+------------------------------+------+---------+---------+
+       Total:                         32     620       4      
+                                                              
+    C:\ti\ccs900\ccs\tools\compiler\ti-cgt-arm_18.12.1.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       autoinit.c.obj                 68     0         0      
+       boot_cortex_m.c.obj            52     0         0      
+       copy_zero_init.c.obj           18     0         0      
+       exit.c.obj                     4      0         0      
+       pre_init.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         146    0         0      
+                                                              
+       Stack:                         0      0         5000   
+       Linker Generated:              0      20        0      
+    +--+------------------------------+------+---------+---------+
+       Grand Total:                   178    640       5004   
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00008c88 records: 3, size/record: 8, table size: 24
-	.data: load addr=00008c50, load size=00000019 bytes, run addr=20006cf8, run size=00000026 bytes, compression=lzss
-	.bss: load addr=00008c78, load size=00000008 bytes, run addr=2000026c, run size=00005701 bytes, compression=zero_init
-	.vtable: load addr=00008c80, load size=00000008 bytes, run addr=20000000, run size=0000026c bytes, compression=zero_init
+__TI_cinit_table @ 0000032c records: 1, size/record: 8, table size: 8
+	.bss: load addr=00000320, load size=00000008 bytes, run addr=20001388, run size=00000004 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00008c6c records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00000328 records: 1, size/record: 4, table size: 4
 	index: 0, handler: __TI_zero_init
-	index: 1, handler: __TI_decompress_lzss
-	index: 2, handler: __TI_decompress_none
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
 
-address   name                           
--------   ----                           
-00008895  C$$EXIT                        
-00008969  CPUbasepriGet                  
-0000895b  CPUbasepriSet                  
-00008935  CPUcpsid                       
-0000894b  CPUcpsie                       
-00008941  CPUprimask                     
-00008957  CPUwfi                         
-00007a09  IntDisable                     
-00007997  IntEnable                      
-00007a7b  IntIsEnabled                   
-0000785b  IntMasterDisable               
-0000784b  IntMasterEnable                
-00007b71  IntPendClear                   
-00007b01  IntPendSet                     
-00007973  IntPriorityGet                 
-000078eb  IntPriorityGroupingGet         
-000078d1  IntPriorityGroupingSet         
-00007bcb  IntPriorityMaskGet             
-00007bbf  IntPriorityMaskSet             
-00007923  IntPrioritySet                 
-0000786b  IntRegister                    
-00007bd3  IntTrigger                     
-000078bd  IntUnregister                  
-00008a33  ResetISR                       
-UNDEFED   SHT$$INIT_ARRAY$$Base          
-UNDEFED   SHT$$INIT_ARRAY$$Limit         
-20006cf8  __STACK_END                    
-00001388  __STACK_SIZE                   
-20005b70  __STACK_TOP                    
-00008c88  __TI_CINIT_Base                
-00008ca0  __TI_CINIT_Limit               
-00008c6c  __TI_Handler_Table_Base        
-00008c78  __TI_Handler_Table_Limit       
-000086fd  __TI_auto_init                 
-20006cf8  __TI_cleanup_ptr               
-000087d9  __TI_decompress_lzss           
-00008a19  __TI_decompress_none           
-20006cfc  __TI_dtors_ptr                 
-20006d00  __TI_enable_exit_profile_output
-ffffffff  __TI_pprof_out_hndl            
-ffffffff  __TI_prof_data_size            
-ffffffff  __TI_prof_data_start           
-00000000  __TI_static_base__             
-00008a27  __TI_zero_init                 
-00008681  __aeabi_memclr                 
-00008681  __aeabi_memclr4                
-00008681  __aeabi_memclr8                
-000085e5  __aeabi_memcpy                 
-000085e5  __aeabi_memcpy4                
-000085e5  __aeabi_memcpy8                
-00008683  __aeabi_memset                 
-00008683  __aeabi_memset4                
-00008683  __aeabi_memset8                
-ffffffff  __binit__                      
-ffffffff  __c_args__                     
-000086fb  __mpu_init                     
-20005970  __stack                        
-000089c1  _args_main                     
-00008841  _c_int00                       
-20006d04  _lock                          
-000089ff  _nop                           
-000089f7  _register_lock                 
-000089f1  _register_unlock               
-00008973  _system_post_cinit             
-00008a49  _system_pre_init               
-20006d08  _unlock                        
-00008899  abort                          
-ffffffff  binit                          
-000088e9  copy_in                        
-20005930  current_header                 
-20005934  current_iphdr_dest             
-20005938  current_iphdr_src              
-2000593c  current_netif                  
-00005fad  dns_gethostbyname              
-000058a3  dns_getserver                  
-00005821  dns_init                       
-0000586b  dns_setserver                  
-000058c7  dns_tmr                        
-00004561  etharp_cleanup_netif           
-000045bb  etharp_find_addr               
-00004839  etharp_output                  
-000049c1  etharp_query                   
-00004c65  etharp_request                 
-00004159  etharp_tmr                     
-00008c40  ethbroadcast                   
-00004c9d  ethernet_input                 
-00008c46  ethzero                        
-000088a1  exit                           
-20000000  g_pfnRAMVectors                
-00000000  g_pfnVectors                   
-20006d14  g_ui32LocalTimer               
-00007def  icmp_dest_unreach              
-00007c09  icmp_input                     
-000073cd  inet_chksum                    
-000073e5  inet_chksum_pbuf               
-00007173  inet_chksum_pseudo             
-0000728f  inet_chksum_pseudo_partial     
-00007485  ip4_addr_isbroadcast           
-000074f1  ip4_addr_netmask_valid         
-00008c4c  ip_addr_any                    
-00006c81  ip_input                       
-0000705b  ip_output                      
-00006ee9  ip_output_if                   
-00006c09  ip_route                       
-0000753b  ipaddr_addr                    
-00007553  ipaddr_aton                    
-00007759  ipaddr_ntoa                    
-00007769  ipaddr_ntoa_r                  
-000087a1  lwip_htonl                     
-0000876d  lwip_htons                     
-000087cd  lwip_ntohl                     
-00008791  lwip_ntohs                     
-200056f0  lwip_stats                     
-00008a3f  main                           
-20006d18  main_func_sp                   
-00006bbb  mem_calloc                     
-000067ab  mem_free                       
-00006745  mem_init                       
-00006a0d  mem_malloc                     
-00006821  mem_trim                       
-0000899d  memcmp                         
-000085e5  memcpy                         
-00008575  memp_free                      
-000083d5  memp_init                      
-000084c7  memp_malloc                    
-00008689  memset                         
-20005940  netif_default                  
-20005944  netif_list                     
-00004e05  pbuf_alloc                     
-000052a9  pbuf_cat                       
-000052ef  pbuf_chain                     
-00005259  pbuf_clen                      
-00005603  pbuf_coalesce                  
-0000534f  pbuf_copy                      
-0000546b  pbuf_copy_partial              
-00005305  pbuf_dechain                   
-000051b1  pbuf_free                      
-00004da5  pbuf_free_ooseq                
-2000596b  pbuf_free_ooseq_pending        
-00005643  pbuf_get_at                    
-000050d5  pbuf_header                    
-000056a1  pbuf_memcmp                    
-00005759  pbuf_memfind                   
-0000501d  pbuf_realloc                   
-00005287  pbuf_ref                       
-000057d7  pbuf_strstr                    
-00005553  pbuf_take                      
-20003078  ram_heap                       
-00008211  raw_bind                       
-0000822f  raw_connect                    
-00008169  raw_input                      
-0000838b  raw_new                        
-0000824d  raw_recv                       
-00008339  raw_remove                     
-00008325  raw_send                       
-00008267  raw_sendto                     
-000089d9  strcmp                         
-00008a05  strlen                         
-0000897b  sys_arch_protect               
-00008983  sys_arch_unprotect             
-000080af  sys_check_timeouts             
-00008975  sys_now                        
-00008139  sys_restart_timeouts           
-00007f63  sys_timeout                    
-00007f3f  sys_timeouts_init              
-00008031  sys_untimeout                  
-00002061  tcp_abandon                    
-0000211d  tcp_abort                      
-00002e8d  tcp_accept                     
-20005948  tcp_active_pcbs                
-2000596c  tcp_active_pcbs_changed        
-00002d25  tcp_alloc                      
-00002e41  tcp_arg                        
-00008c2c  tcp_backoff                    
-00002131  tcp_bind                       
-2000594c  tcp_bound_pcbs                 
-00001fbf  tcp_close                      
-0000246d  tcp_connect                    
-0000302d  tcp_debug_state_str            
-00002fe9  tcp_eff_send_mss               
-00003831  tcp_enqueue_flags              
-00002e79  tcp_err                        
-00002a51  tcp_fasttmr                    
-00001d81  tcp_init                       
-0000026d  tcp_input                      
-20005950  tcp_input_pcb                  
-00003fb9  tcp_keepalive                  
-20005954  tcp_listen_pcbs                
-00002217  tcp_listen_with_backlog        
-00002e37  tcp_new                        
-00002fd3  tcp_next_iss                   
-00003a29  tcp_output                     
-00008c1c  tcp_pcb_lists                  
-00002ec5  tcp_pcb_purge                  
-00002f39  tcp_pcb_remove                 
-00008c39  tcp_persist_backoff            
-00002e9f  tcp_poll                       
-00002ad1  tcp_process_refused_data       
-00002e53  tcp_recv                       
-00002c15  tcp_recv_null                  
-00002385  tcp_recved                     
-00003ea9  tcp_rexmit                     
-00003f25  tcp_rexmit_fast                
-00003e59  tcp_rexmit_rto                 
-00003daf  tcp_rst                        
-00002beb  tcp_seg_copy                   
-00002bb1  tcp_seg_free                   
-00002b91  tcp_segs_free                  
-000039a5  tcp_send_empty_ack             
-0000310d  tcp_send_fin                   
-00002e67  tcp_sent                       
-00002bd5  tcp_setprio                    
-00001fe5  tcp_shutdown                   
-00002619  tcp_slowtmr                    
-00008b60  tcp_state_str                  
-20005958  tcp_ticks                      
-00007eed  tcp_timer_needed               
-2000595c  tcp_tmp_pcb                    
-00001d83  tcp_tmr                        
-20005960  tcp_tw_pcbs                    
-00002311  tcp_update_rcv_ann_wnd         
-000033a1  tcp_write                      
-00004029  tcp_zero_window_probe          
-000064a5  udp_bind                       
-00006565  udp_connect                    
-000065ed  udp_disconnect                 
-00006025  udp_init                       
-00006091  udp_input                      
-00006679  udp_new                        
-20005964  udp_pcbs                       
-0000660d  udp_recv                       
-00006627  udp_remove                     
-000062e5  udp_send                       
-00006301  udp_sendto                     
-00006355  udp_sendto_if                  
+address   name                          
+-------   ----                          
+0000031b  C$$EXIT                       
+0000030b  ResetISR                      
+20001388  __STACK_END                   
+00001388  __STACK_SIZE                  
+20000200  __STACK_TOP                   
+0000032c  __TI_CINIT_Base               
+00000334  __TI_CINIT_Limit              
+00000328  __TI_Handler_Table_Base       
+0000032c  __TI_Handler_Table_Limit      
+0000026d  __TI_auto_init_nobinit_nopinit
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+00000000  __TI_static_base__            
+000002f9  __TI_zero_init_nomemset       
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+UNDEFED   __mpu_init                    
+20000000  __stack                       
+000002b1  _c_int00_noargs               
+UNDEFED   _system_post_cinit            
+00000317  _system_pre_init              
+0000031b  abort                         
+ffffffff  binit                         
+00000000  g_pfnVectors                  
+20001388  ip_addr                       
+000002e5  main                          
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
 
-address   name                           
--------   ----                           
-00000000  __TI_static_base__             
-00000000  g_pfnVectors                   
-0000026d  tcp_input                      
-00001388  __STACK_SIZE                   
-00001d81  tcp_init                       
-00001d83  tcp_tmr                        
-00001fbf  tcp_close                      
-00001fe5  tcp_shutdown                   
-00002061  tcp_abandon                    
-0000211d  tcp_abort                      
-00002131  tcp_bind                       
-00002217  tcp_listen_with_backlog        
-00002311  tcp_update_rcv_ann_wnd         
-00002385  tcp_recved                     
-0000246d  tcp_connect                    
-00002619  tcp_slowtmr                    
-00002a51  tcp_fasttmr                    
-00002ad1  tcp_process_refused_data       
-00002b91  tcp_segs_free                  
-00002bb1  tcp_seg_free                   
-00002bd5  tcp_setprio                    
-00002beb  tcp_seg_copy                   
-00002c15  tcp_recv_null                  
-00002d25  tcp_alloc                      
-00002e37  tcp_new                        
-00002e41  tcp_arg                        
-00002e53  tcp_recv                       
-00002e67  tcp_sent                       
-00002e79  tcp_err                        
-00002e8d  tcp_accept                     
-00002e9f  tcp_poll                       
-00002ec5  tcp_pcb_purge                  
-00002f39  tcp_pcb_remove                 
-00002fd3  tcp_next_iss                   
-00002fe9  tcp_eff_send_mss               
-0000302d  tcp_debug_state_str            
-0000310d  tcp_send_fin                   
-000033a1  tcp_write                      
-00003831  tcp_enqueue_flags              
-000039a5  tcp_send_empty_ack             
-00003a29  tcp_output                     
-00003daf  tcp_rst                        
-00003e59  tcp_rexmit_rto                 
-00003ea9  tcp_rexmit                     
-00003f25  tcp_rexmit_fast                
-00003fb9  tcp_keepalive                  
-00004029  tcp_zero_window_probe          
-00004159  etharp_tmr                     
-00004561  etharp_cleanup_netif           
-000045bb  etharp_find_addr               
-00004839  etharp_output                  
-000049c1  etharp_query                   
-00004c65  etharp_request                 
-00004c9d  ethernet_input                 
-00004da5  pbuf_free_ooseq                
-00004e05  pbuf_alloc                     
-0000501d  pbuf_realloc                   
-000050d5  pbuf_header                    
-000051b1  pbuf_free                      
-00005259  pbuf_clen                      
-00005287  pbuf_ref                       
-000052a9  pbuf_cat                       
-000052ef  pbuf_chain                     
-00005305  pbuf_dechain                   
-0000534f  pbuf_copy                      
-0000546b  pbuf_copy_partial              
-00005553  pbuf_take                      
-00005603  pbuf_coalesce                  
-00005643  pbuf_get_at                    
-000056a1  pbuf_memcmp                    
-00005759  pbuf_memfind                   
-000057d7  pbuf_strstr                    
-00005821  dns_init                       
-0000586b  dns_setserver                  
-000058a3  dns_getserver                  
-000058c7  dns_tmr                        
-00005fad  dns_gethostbyname              
-00006025  udp_init                       
-00006091  udp_input                      
-000062e5  udp_send                       
-00006301  udp_sendto                     
-00006355  udp_sendto_if                  
-000064a5  udp_bind                       
-00006565  udp_connect                    
-000065ed  udp_disconnect                 
-0000660d  udp_recv                       
-00006627  udp_remove                     
-00006679  udp_new                        
-00006745  mem_init                       
-000067ab  mem_free                       
-00006821  mem_trim                       
-00006a0d  mem_malloc                     
-00006bbb  mem_calloc                     
-00006c09  ip_route                       
-00006c81  ip_input                       
-00006ee9  ip_output_if                   
-0000705b  ip_output                      
-00007173  inet_chksum_pseudo             
-0000728f  inet_chksum_pseudo_partial     
-000073cd  inet_chksum                    
-000073e5  inet_chksum_pbuf               
-00007485  ip4_addr_isbroadcast           
-000074f1  ip4_addr_netmask_valid         
-0000753b  ipaddr_addr                    
-00007553  ipaddr_aton                    
-00007759  ipaddr_ntoa                    
-00007769  ipaddr_ntoa_r                  
-0000784b  IntMasterEnable                
-0000785b  IntMasterDisable               
-0000786b  IntRegister                    
-000078bd  IntUnregister                  
-000078d1  IntPriorityGroupingSet         
-000078eb  IntPriorityGroupingGet         
-00007923  IntPrioritySet                 
-00007973  IntPriorityGet                 
-00007997  IntEnable                      
-00007a09  IntDisable                     
-00007a7b  IntIsEnabled                   
-00007b01  IntPendSet                     
-00007b71  IntPendClear                   
-00007bbf  IntPriorityMaskSet             
-00007bcb  IntPriorityMaskGet             
-00007bd3  IntTrigger                     
-00007c09  icmp_input                     
-00007def  icmp_dest_unreach              
-00007eed  tcp_timer_needed               
-00007f3f  sys_timeouts_init              
-00007f63  sys_timeout                    
-00008031  sys_untimeout                  
-000080af  sys_check_timeouts             
-00008139  sys_restart_timeouts           
-00008169  raw_input                      
-00008211  raw_bind                       
-0000822f  raw_connect                    
-0000824d  raw_recv                       
-00008267  raw_sendto                     
-00008325  raw_send                       
-00008339  raw_remove                     
-0000838b  raw_new                        
-000083d5  memp_init                      
-000084c7  memp_malloc                    
-00008575  memp_free                      
-000085e5  __aeabi_memcpy                 
-000085e5  __aeabi_memcpy4                
-000085e5  __aeabi_memcpy8                
-000085e5  memcpy                         
-00008681  __aeabi_memclr                 
-00008681  __aeabi_memclr4                
-00008681  __aeabi_memclr8                
-00008683  __aeabi_memset                 
-00008683  __aeabi_memset4                
-00008683  __aeabi_memset8                
-00008689  memset                         
-000086fb  __mpu_init                     
-000086fd  __TI_auto_init                 
-0000876d  lwip_htons                     
-00008791  lwip_ntohs                     
-000087a1  lwip_htonl                     
-000087cd  lwip_ntohl                     
-000087d9  __TI_decompress_lzss           
-00008841  _c_int00                       
-00008895  C$$EXIT                        
-00008899  abort                          
-000088a1  exit                           
-000088e9  copy_in                        
-00008935  CPUcpsid                       
-00008941  CPUprimask                     
-0000894b  CPUcpsie                       
-00008957  CPUwfi                         
-0000895b  CPUbasepriSet                  
-00008969  CPUbasepriGet                  
-00008973  _system_post_cinit             
-00008975  sys_now                        
-0000897b  sys_arch_protect               
-00008983  sys_arch_unprotect             
-0000899d  memcmp                         
-000089c1  _args_main                     
-000089d9  strcmp                         
-000089f1  _register_unlock               
-000089f7  _register_lock                 
-000089ff  _nop                           
-00008a05  strlen                         
-00008a19  __TI_decompress_none           
-00008a27  __TI_zero_init                 
-00008a33  ResetISR                       
-00008a3f  main                           
-00008a49  _system_pre_init               
-00008b60  tcp_state_str                  
-00008c1c  tcp_pcb_lists                  
-00008c2c  tcp_backoff                    
-00008c39  tcp_persist_backoff            
-00008c40  ethbroadcast                   
-00008c46  ethzero                        
-00008c4c  ip_addr_any                    
-00008c6c  __TI_Handler_Table_Base        
-00008c78  __TI_Handler_Table_Limit       
-00008c88  __TI_CINIT_Base                
-00008ca0  __TI_CINIT_Limit               
-20000000  g_pfnRAMVectors                
-20003078  ram_heap                       
-200056f0  lwip_stats                     
-20005930  current_header                 
-20005934  current_iphdr_dest             
-20005938  current_iphdr_src              
-2000593c  current_netif                  
-20005940  netif_default                  
-20005944  netif_list                     
-20005948  tcp_active_pcbs                
-2000594c  tcp_bound_pcbs                 
-20005950  tcp_input_pcb                  
-20005954  tcp_listen_pcbs                
-20005958  tcp_ticks                      
-2000595c  tcp_tmp_pcb                    
-20005960  tcp_tw_pcbs                    
-20005964  udp_pcbs                       
-2000596b  pbuf_free_ooseq_pending        
-2000596c  tcp_active_pcbs_changed        
-20005970  __stack                        
-20005b70  __STACK_TOP                    
-20006cf8  __STACK_END                    
-20006cf8  __TI_cleanup_ptr               
-20006cfc  __TI_dtors_ptr                 
-20006d00  __TI_enable_exit_profile_output
-20006d04  _lock                          
-20006d08  _unlock                        
-20006d14  g_ui32LocalTimer               
-20006d18  main_func_sp                   
-ffffffff  __TI_pprof_out_hndl            
-ffffffff  __TI_prof_data_size            
-ffffffff  __TI_prof_data_start           
-ffffffff  __binit__                      
-ffffffff  __c_args__                     
-ffffffff  binit                          
-UNDEFED   SHT$$INIT_ARRAY$$Base          
-UNDEFED   SHT$$INIT_ARRAY$$Limit         
+address   name                          
+-------   ----                          
+00000000  __TI_static_base__            
+00000000  g_pfnVectors                  
+0000026d  __TI_auto_init_nobinit_nopinit
+000002b1  _c_int00_noargs               
+000002e5  main                          
+000002f9  __TI_zero_init_nomemset       
+0000030b  ResetISR                      
+00000317  _system_pre_init              
+0000031b  C$$EXIT                       
+0000031b  abort                         
+00000328  __TI_Handler_Table_Base       
+0000032c  __TI_CINIT_Base               
+0000032c  __TI_Handler_Table_Limit      
+00000334  __TI_CINIT_Limit              
+00001388  __STACK_SIZE                  
+20000000  __stack                       
+20000200  __STACK_TOP                   
+20001388  __STACK_END                   
+20001388  ip_addr                       
+ffffffff  __TI_pprof_out_hndl           
+ffffffff  __TI_prof_data_size           
+ffffffff  __TI_prof_data_start          
+ffffffff  __binit__                     
+ffffffff  __c_args__                    
+ffffffff  binit                         
+UNDEFED   __mpu_init                    
+UNDEFED   _system_post_cinit            
 
-[235 symbols]
+[27 symbols]

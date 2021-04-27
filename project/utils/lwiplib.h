@@ -68,6 +68,7 @@ extern "C"
 #include "../src/include/lwip/def.h"
 #include "../src/include/lwip/tcp_impl.h"
 #include "../src/include/lwip/timers.h"
+#include "../src/include/lwip/etharp.h"
 
 //*****************************************************************************
 //

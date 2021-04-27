@@ -27,9 +27,9 @@
 //// Ensure that the lwIP compile time options are included first.
 ////
 ////*****************************************************************************
-#include <stdint.h>
-#include <stdbool.h>
-#include "utils/lwiplib.h"
+//#include <stdint.h>
+//#include <stdbool.h>
+//#include "utils/lwiplib.h"
 //
 ////*****************************************************************************
 ////
@@ -246,9 +246,9 @@
 //// Host and lwIP periodic callback functions.
 ////
 ////*****************************************************************************
-#if NO_SYS
-uint32_t g_ui32LocalTimer = 0;
-#endif
+//#if NO_SYS
+//uint32_t g_ui32LocalTimer = 0;
+//#endif
 //
 ////*****************************************************************************
 ////
