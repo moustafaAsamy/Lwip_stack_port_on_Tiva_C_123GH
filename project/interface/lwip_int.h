@@ -22,7 +22,7 @@
 //#include "string.h"
 
 
-//extern struct netif netIf_List[5] ;
+ extern struct netif   g_sNetIF ;
 void ECU_int(struct netif *netif, u8_t controller_id ,  ip_addr_t *ipaddr, ip_addr_t *netmask,ip_addr_t *gw);
 void UDP_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p,ip_addr_t *addr, u16_t port);
 //extern udp_recv_fn recv ;

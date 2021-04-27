@@ -33,6 +33,7 @@
 
  void InitConsole(void);
  extern err_t enc_low_level_output(struct netif *netif, struct pbuf *p );
+ extern err_t EthIf_ProvideTxBuffer(struct netif *netif, struct pbuf *BufPtr);
 // err_t TCP_connection_establshe(void *pvArg, struct tcp_pcb *psPcb, err_t iErr);
  extern void ButtonsInit(void);
  struct tcp_pcb * psTCP ;
@@ -227,7 +228,7 @@ void lwIPServiceTimers(void)
     if((g_ui32LocalTimer - g_ui32HostTimer) >= HOST_TMR_INTERVAL)
     {
         g_ui32HostTimer = g_ui32LocalTimer;
-        lwIPHostTimerHandler();
+        //lwIPHostTimerHandler();
     }
 #endif
 
@@ -376,7 +377,7 @@ void ECU_int(struct netif *netif, uint8_t controller_id ,  ip_addr_t *ipaddr, ip
         netif->hwaddr[4] = mac[4];
         netif->hwaddr[5] = mac[5];
         netif->output = etharp_output;
-        netif->linkoutput = enc_low_level_output;
+        netif->linkoutput = EthIf_ProvideTxBuffer;
         LWIP_stack_int(netif, controller_id ,  ipaddr, netmask,gw);
         InitConsole();
         UARTprintf("55");

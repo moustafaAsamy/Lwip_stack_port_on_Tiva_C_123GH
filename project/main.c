@@ -23,4 +23,5 @@ int main()
 {
 
     ip_addr.addr = 0xfbb03020;
+     ECU_int(&g_sNetIF, 0 ,  &ip_addr, &net_mask, &gw_addr);
 }

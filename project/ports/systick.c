@@ -56,7 +56,7 @@ void SysTickIntHandler(void)
         if (main_function >= 10 )
             {
                 main_function =0;
-                TcpIp_MainFunction();
+               // TcpIp_MainFunction();
             }
             if ((leds_timer == 200  ) || (leds_timer > 200  ))
                 {

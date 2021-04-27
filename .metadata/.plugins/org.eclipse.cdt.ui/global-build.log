@@ -16996,3 +16996,238 @@ gmake[1]: 'project.out' is up to date.
 gmake[1]: 'project.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ports/config.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/config.d_raw" --obj_directory="ports"  "../ports/config.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../ports/config.c"
+ 
+Building file: "../interface/interface.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="interface/interface.d_raw" --obj_directory="interface"  "../interface/interface.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../interface/interface.c", line 138: warning #225-D: function "lwip_init" declared implicitly
+"../interface/interface.c", line 230: warning #225-D: function "lwIPHostTimerHandler" declared implicitly
+"../interface/interface.c", line 380: warning #225-D: function "LWIP_stack_int" declared implicitly
+"../interface/interface.c", line 409: warning #161-D: declaration is incompatible with previous "LWIP_stack_int" (declared at line 380)
+Finished building: "../interface/interface.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../main.c"
+ 
+Building file: "../ports/systick.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/systick.d_raw" --obj_directory="ports"  "../ports/systick.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../ports/systick.c", line 59: warning #225-D: function "TcpIp_MainFunction" declared implicitly
+Finished building: "../ports/systick.c"
+ 
+Building file: "../ports/enc28j60.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/enc28j60.d_raw" --obj_directory="ports"  "../ports/enc28j60.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../ports/enc28j60.c", line 544: warning #225-D: function "TcpIp_RxIndication" declared implicitly
+Finished building: "../ports/enc28j60.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+Finished building target: "project.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../main.c", line 26: error #80: expected a type specifier
+"../main.c", line 26: error #80: expected a type specifier
+"../main.c", line 26: error #80: expected a type specifier
+"../main.c", line 26: error #80: expected a type specifier
+"../main.c", line 26: error #80: expected a type specifier
+5 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../main.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+ 
+ undefined            first referenced         
+  symbol                  in file              
+ ---------            ----------------         
+ TcpIp_MainFunction   ./ports/systick.obj      
+ TcpIp_RxIndication   ./ports/enc28j60.obj     
+ enc_low_level_output ./interface/interface.obj
+ lwIPHostTimerHandler ./interface/interface.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:252: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:248: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ports/systick.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/systick.d_raw" --obj_directory="ports"  "../ports/systick.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../ports/systick.c"
+ 
+Building file: "../ports/enc28j60.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/enc28j60.d_raw" --obj_directory="ports"  "../ports/enc28j60.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../ports/enc28j60.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+ 
+ undefined            first referenced         
+  symbol                  in file              
+ ---------            ----------------         
+ enc_low_level_output ./interface/interface.obj
+ lwIPHostTimerHandler ./interface/interface.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:252: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:248: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../interface/interface.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="interface/interface.d_raw" --obj_directory="interface"  "../interface/interface.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../interface/interface.c", line 139: warning #225-D: function "lwip_init" declared implicitly
+"../interface/interface.c", line 231: warning #225-D: function "lwIPHostTimerHandler" declared implicitly
+"../interface/interface.c", line 381: warning #225-D: function "LWIP_stack_int" declared implicitly
+"../interface/interface.c", line 410: warning #161-D: declaration is incompatible with previous "LWIP_stack_int" (declared at line 381)
+Finished building: "../interface/interface.c"
+ 
+Building file: "../ports/enc28j60.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/enc28j60.d_raw" --obj_directory="ports"  "../ports/enc28j60.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../ports/enc28j60.c", line 563: warning #994-D: missing return statement at end of non-void function "EthIf_ProvideTxBuffer"
+Finished building: "../ports/enc28j60.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+ 
+ undefined            first referenced         
+  symbol                  in file              
+ ---------            ----------------         
+ lwIPHostTimerHandler ./interface/interface.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:252: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:248: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../interface/interface.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="interface/interface.d_raw" --obj_directory="interface"  "../interface/interface.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../interface/interface.c", line 139: warning #225-D: function "lwip_init" declared implicitly
+"../interface/interface.c", line 381: warning #225-D: function "LWIP_stack_int" declared implicitly
+"../interface/interface.c", line 410: warning #161-D: declaration is incompatible with previous "LWIP_stack_int" (declared at line 381)
+Finished building: "../interface/interface.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+Finished building target: "project.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project.out' is up to date.
+
+**** Build Finished ****

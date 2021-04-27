@@ -519,25 +519,25 @@ extern void enc_send_packet(const uint8_t *buf, uint16_t count) {
   {      transmit_count=transmit_count;}
 }
 
-//void TcpIp_RxIndication( uint8_t CtrlIdx, uint8_t FrameType, uint8_t IsBroadcast, const uint8_t* PhysAddrPtr, const uint8_t* DataPtr, uint16_t LenByte )
-//{
-//    struct pbuf *pBuf  = pbuf_alloc(PBUF_RAW, LenByte,PBUF_POOL);
-//    struct pbuf *intial_buffer  = pBuf;
-//    int copy_lenght,pos =0;
-//    if(pBuf != NULL)
-//    {
-//        while(pBuf &&  (LenByte>0))
-//        {
-//            //copy_lenght = PBUF_POOL_BUFSIZE < LenByte ? PBUF_POOL_BUFSIZE : LenByte ;
-//            memcpy(pBuf->payload, DataPtr+pos, copy_lenght = PBUF_POOL_BUFSIZE < LenByte ? PBUF_POOL_BUFSIZE : LenByte );
-//            LenByte = LenByte - PBUF_POOL_BUFSIZE <0 ? 0 : LenByte - PBUF_POOL_BUFSIZE ;
-//            pBuf=pBuf->next;
-//            pos = copy_lenght+pos;
-//        }
-//    if(ethernet_input(intial_buffer, &g_sNetIF) != ERR_OK)
-//     { pbuf_free(intial_buffer);}
-//    }
-//}
+void TcpIp_RxIndication( uint8_t CtrlIdx, uint8_t FrameType, uint8_t IsBroadcast, const uint8_t* PhysAddrPtr, const uint8_t* DataPtr, uint16_t LenByte )
+{
+    struct pbuf *pBuf  = pbuf_alloc(PBUF_RAW, LenByte,PBUF_POOL);
+    struct pbuf *intial_buffer  = pBuf;
+    int copy_lenght,pos =0;
+    if(pBuf != NULL)
+    {
+        while(pBuf &&  (LenByte>0))
+        {
+            //copy_lenght = PBUF_POOL_BUFSIZE < LenByte ? PBUF_POOL_BUFSIZE : LenByte ;
+            memcpy(pBuf->payload, DataPtr+pos, copy_lenght = PBUF_POOL_BUFSIZE < LenByte ? PBUF_POOL_BUFSIZE : LenByte );
+            LenByte = LenByte - PBUF_POOL_BUFSIZE <0 ? 0 : LenByte - PBUF_POOL_BUFSIZE ;
+            pBuf=pBuf->next;
+            pos = copy_lenght+pos;
+        }
+    if(ethernet_input(intial_buffer, &g_sNetIF) != ERR_OK)
+     { pbuf_free(intial_buffer);}
+    }
+}
 
 void reciving_autosar(int data_count )
 {
@@ -545,19 +545,19 @@ void reciving_autosar(int data_count )
 }
 
 
-//err_t EthIf_ProvideTxBuffer(struct netif *netif, struct pbuf *BufPtr)
-//{
-//
-//        uint8_t frame[1514]={0};
-//        uint8_t * frame_1=(uint8_t *)BufPtr->payload;
-//        uint8_t *frame_ptr = &frame[0];
-//        //int x = *LenBytePtr;
-//        memcpy(frame_ptr, frame_1 , BufPtr->tot_len );
-//        int c = 0;
-//        if ( BufPtr->tot_len  <64)
-//        {c=64;}
-//        else
-//        { c=BufPtr->tot_len ;}
-//        enc_send_packet(frame,c);
-//
-//}
+err_t EthIf_ProvideTxBuffer(struct netif *netif, struct pbuf *BufPtr)
+{
+
+        uint8_t frame[1514]={0};
+        uint8_t * frame_1=(uint8_t *)BufPtr->payload;
+        uint8_t *frame_ptr = &frame[0];
+        //int x = *LenBytePtr;
+        memcpy(frame_ptr, frame_1 , BufPtr->tot_len );
+        int c = 0;
+        if ( BufPtr->tot_len  <64)
+        {c=64;}
+        else
+        { c=BufPtr->tot_len ;}
+        enc_send_packet(frame,c);
+
+}
