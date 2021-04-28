@@ -42341,3 +42341,531 @@ Finished building target: "project.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"../ros_ethernet/Ethernet.cpp", line 1: fatal error #1965: cannot open source file "utility/w5100.h"
+1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"..\ros_ethernet\EthernetClient.h", line 11: error #20: identifier "size_t" is undefined
+"..\ros_ethernet\EthernetClient.h", line 11: error #20: identifier "size_t" is undefined
+"..\ros_ethernet\EthernetClient.h", line 13: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 5: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 14: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 14: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 22: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 33: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 35: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+10 errors detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../roscore.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="roscore.d_raw"  "../roscore.c"
+Finished building: "../roscore.c"
+ 
+Building file: "../ros_ethernet/adaptor.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/adaptor.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/adaptor.c"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:16: recipe for target 'ros_ethernet/adaptor.obj' failed
+"../ros_ethernet/adaptor.c", line 16: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/adaptor.c", line 30: warning #994-D: missing return statement at end of non-void function "recv"
+"../ros_ethernet/adaptor.c", line 34: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/adaptor.c", line 37: warning #994-D: missing return statement at end of non-void function "send"
+2 errors detected in the compilation of "../ros_ethernet/adaptor.c".
+gmake: *** [ros_ethernet/adaptor.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+Building file: "../main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.cpp"
+"../main.cpp", line 61: warning #994-D: missing return statement at end of non-void function "millis"
+Finished building: "../main.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"../ros_ethernet/Ethernet.cpp", line 1: fatal error #1965: cannot open source file "utility/w5100.h"
+1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"..\ros_ethernet\EthernetClient.h", line 11: error #20: identifier "size_t" is undefined
+"..\ros_ethernet\EthernetClient.h", line 11: error #20: identifier "size_t" is undefined
+"..\ros_ethernet\EthernetClient.h", line 13: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 5: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 14: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 14: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 22: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 33: error #20: identifier "size_t" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 35: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+10 errors detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+Building file: "../ros_ethernet/adaptor.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/adaptor.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/adaptor.c"
+"../ros_ethernet/adaptor.c", line 30: warning #994-D: missing return statement at end of non-void function "recv"
+"../ros_ethernet/adaptor.c", line 37: warning #994-D: missing return statement at end of non-void function "send"
+Finished building: "../ros_ethernet/adaptor.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"../ros_ethernet/Ethernet.cpp", line 1: fatal error #1965: cannot open source file "utility/w5100.h"
+1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 5: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 22: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 35: error #20: identifier "_sock" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+4 errors detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"../ros_ethernet/Ethernet.cpp", line 1: fatal error #1965: cannot open source file "utility/w5100.h"
+1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 5: error #20: identifier "SOCKET" is undefined
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+2 errors detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"../ros_ethernet/Ethernet.cpp", line 1: fatal error #1965: cannot open source file "utility/w5100.h"
+1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+1 error detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"..\ros_ethernet\Ethernet.h", line 8: fatal error #1965: cannot open source file "EthernetServer.h"
+1 error and 1 catastrophic error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+Compilation terminated.
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+1 error detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+1 error detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/Ethernet.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/Ethernet.cpp".
+gmake: *** [ros_ethernet/Ethernet.obj] Error 1
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/EthernetClient.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+1 error detected in the compilation of "../ros_ethernet/EthernetClient.cpp".
+gmake: *** [ros_ethernet/EthernetClient.obj] Error 1
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+ 
+>> Compilation failure
+ros_ethernet/subdir_rules.mk:9: recipe for target 'ros_ethernet/IPAddress.obj' failed
+"..\ros_ethernet\IPAddress.h", line 48: error #291: no instance of constructor "IPAddress::IPAddress" matches the argument list
+            argument types are: (int, int, int, int)
+1 error detected in the compilation of "../ros_ethernet/IPAddress.cpp".
+gmake: *** [ros_ethernet/IPAddress.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ros_ethernet/Ethernet.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/Ethernet.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/Ethernet.cpp"
+Finished building: "../ros_ethernet/Ethernet.cpp"
+ 
+Building file: "../ros_ethernet/IPAddress.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/IPAddress.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/IPAddress.cpp"
+Finished building: "../ros_ethernet/IPAddress.cpp"
+ 
+Building file: "../ros_ethernet/EthernetClient.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ros_ethernet/EthernetClient.d_raw" --obj_directory="ros_ethernet"  "../ros_ethernet/EthernetClient.cpp"
+"../ros_ethernet/EthernetClient.cpp", line 12: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 17: warning #112-D: statement is unreachable
+"../ros_ethernet/EthernetClient.cpp", line 42: warning #994-D: missing return statement at end of non-void function "EthernetClient::connected"
+Finished building: "../ros_ethernet/EthernetClient.cpp"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./chatter.obj" "./main.obj" "./print.obj" "./roscore.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./ros_ethernet/Ethernet.obj" "./ros_ethernet/EthernetClient.obj" "./ros_ethernet/IPAddress.obj" "./ros_ethernet/adaptor.obj" "./ros_lib/ros/duration.obj" "./ros_lib/ros/time.obj" "./rosserial/rosserial_tivac/src/ros_lib/HardwareSerial.obj" "./rosserial/rosserial_tivac/src/ros_lib/Tivac_port.obj" "./rosserial/rosserial_tivac/src/ros_lib/tivac_hardware.obj" "./rosserial/rosserial_tivac/src/ros_lib/usb_serial_structs.obj" "./rosserial/rosserial_tivac/src/ros_lib/wiring.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./usblib/device/usbdaudio.obj" "./usblib/device/usbdbulk.obj" "./usblib/device/usbdcdc.obj" "./usblib/device/usbdcdesc.obj" "./usblib/device/usbdcomp.obj" "./usblib/device/usbdconfig.obj" "./usblib/device/usbddfu-rt.obj" "./usblib/device/usbdenum.obj" "./usblib/device/usbdhandler.obj" "./usblib/device/usbdhid.obj" "./usblib/device/usbdhidgamepad.obj" "./usblib/device/usbdhidkeyb.obj" "./usblib/device/usbdhidmouse.obj" "./usblib/device/usbdmsc.obj" "./usblib/host/usbhaudio.obj" "./usblib/host/usbhhid.obj" "./usblib/host/usbhhidkeyboard.obj" "./usblib/host/usbhhidmouse.obj" "./usblib/host/usbhhub.obj" "./usblib/host/usbhmsc.obj" "./usblib/host/usbhostenum.obj" "./usblib/host/usbhscsi.obj" "./usblib/usbbuffer.obj" "./usblib/usbdesc.obj" "./usblib/usbdma.obj" "./usblib/usbkeyboardmap.obj" "./usblib/usbmode.obj" "./usblib/usbringbuf.obj" "./usblib/usbtick.obj" "./usblib/usbulpi.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+error #10056: symbol "send" redefined: first defined in "./interface/interface.obj"; redefined in "./ros_ethernet/adaptor.obj"
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:308: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:304: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./chatter.obj" "./main.obj" "./print.obj" "./roscore.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./ros_ethernet/Ethernet.obj" "./ros_ethernet/EthernetClient.obj" "./ros_ethernet/IPAddress.obj" "./ros_ethernet/adaptor.obj" "./ros_lib/ros/duration.obj" "./ros_lib/ros/time.obj" "./rosserial/rosserial_tivac/src/ros_lib/HardwareSerial.obj" "./rosserial/rosserial_tivac/src/ros_lib/Tivac_port.obj" "./rosserial/rosserial_tivac/src/ros_lib/tivac_hardware.obj" "./rosserial/rosserial_tivac/src/ros_lib/usb_serial_structs.obj" "./rosserial/rosserial_tivac/src/ros_lib/wiring.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./usblib/device/usbdaudio.obj" "./usblib/device/usbdbulk.obj" "./usblib/device/usbdcdc.obj" "./usblib/device/usbdcdesc.obj" "./usblib/device/usbdcomp.obj" "./usblib/device/usbdconfig.obj" "./usblib/device/usbddfu-rt.obj" "./usblib/device/usbdenum.obj" "./usblib/device/usbdhandler.obj" "./usblib/device/usbdhid.obj" "./usblib/device/usbdhidgamepad.obj" "./usblib/device/usbdhidkeyb.obj" "./usblib/device/usbdhidmouse.obj" "./usblib/device/usbdmsc.obj" "./usblib/host/usbhaudio.obj" "./usblib/host/usbhhid.obj" "./usblib/host/usbhhidkeyboard.obj" "./usblib/host/usbhhidmouse.obj" "./usblib/host/usbhhub.obj" "./usblib/host/usbhmsc.obj" "./usblib/host/usbhostenum.obj" "./usblib/host/usbhscsi.obj" "./usblib/usbbuffer.obj" "./usblib/usbdesc.obj" "./usblib/usbdma.obj" "./usblib/usbkeyboardmap.obj" "./usblib/usbmode.obj" "./usblib/usbringbuf.obj" "./usblib/usbtick.obj" "./usblib/usbulpi.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+error #10056: symbol "send" redefined: first defined in "./interface/interface.obj"; redefined in "./ros_ethernet/adaptor.obj"
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:308: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:304: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./chatter.obj" "./main.obj" "./print.obj" "./roscore.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./ros_ethernet/Ethernet.obj" "./ros_ethernet/EthernetClient.obj" "./ros_ethernet/IPAddress.obj" "./ros_ethernet/adaptor.obj" "./ros_lib/ros/duration.obj" "./ros_lib/ros/time.obj" "./rosserial/rosserial_tivac/src/ros_lib/HardwareSerial.obj" "./rosserial/rosserial_tivac/src/ros_lib/Tivac_port.obj" "./rosserial/rosserial_tivac/src/ros_lib/tivac_hardware.obj" "./rosserial/rosserial_tivac/src/ros_lib/usb_serial_structs.obj" "./rosserial/rosserial_tivac/src/ros_lib/wiring.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./usblib/device/usbdaudio.obj" "./usblib/device/usbdbulk.obj" "./usblib/device/usbdcdc.obj" "./usblib/device/usbdcdesc.obj" "./usblib/device/usbdcomp.obj" "./usblib/device/usbdconfig.obj" "./usblib/device/usbddfu-rt.obj" "./usblib/device/usbdenum.obj" "./usblib/device/usbdhandler.obj" "./usblib/device/usbdhid.obj" "./usblib/device/usbdhidgamepad.obj" "./usblib/device/usbdhidkeyb.obj" "./usblib/device/usbdhidmouse.obj" "./usblib/device/usbdmsc.obj" "./usblib/host/usbhaudio.obj" "./usblib/host/usbhhid.obj" "./usblib/host/usbhhidkeyboard.obj" "./usblib/host/usbhhidmouse.obj" "./usblib/host/usbhhub.obj" "./usblib/host/usbhmsc.obj" "./usblib/host/usbhostenum.obj" "./usblib/host/usbhscsi.obj" "./usblib/usbbuffer.obj" "./usblib/usbdesc.obj" "./usblib/usbdma.obj" "./usblib/usbkeyboardmap.obj" "./usblib/usbmode.obj" "./usblib/usbringbuf.obj" "./usblib/usbtick.obj" "./usblib/usbulpi.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+error #10056: symbol "send" redefined: first defined in "./interface/interface.obj"; redefined in "./ros_ethernet/adaptor.obj"
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:308: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:304: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../ports/systick.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ports/systick.d_raw" --obj_directory="ports"  "../ports/systick.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+Finished building: "../ports/systick.c"
+ 
+Building file: "../main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.cpp"
+"../main.cpp", line 61: warning #994-D: missing return statement at end of non-void function "millis"
+Finished building: "../main.cpp"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./chatter.obj" "./main.obj" "./print.obj" "./roscore.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./ros_ethernet/Ethernet.obj" "./ros_ethernet/EthernetClient.obj" "./ros_ethernet/IPAddress.obj" "./ros_ethernet/adaptor.obj" "./ros_lib/ros/duration.obj" "./ros_lib/ros/time.obj" "./rosserial/rosserial_tivac/src/ros_lib/HardwareSerial.obj" "./rosserial/rosserial_tivac/src/ros_lib/Tivac_port.obj" "./rosserial/rosserial_tivac/src/ros_lib/tivac_hardware.obj" "./rosserial/rosserial_tivac/src/ros_lib/usb_serial_structs.obj" "./rosserial/rosserial_tivac/src/ros_lib/wiring.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./usblib/device/usbdaudio.obj" "./usblib/device/usbdbulk.obj" "./usblib/device/usbdcdc.obj" "./usblib/device/usbdcdesc.obj" "./usblib/device/usbdcomp.obj" "./usblib/device/usbdconfig.obj" "./usblib/device/usbddfu-rt.obj" "./usblib/device/usbdenum.obj" "./usblib/device/usbdhandler.obj" "./usblib/device/usbdhid.obj" "./usblib/device/usbdhidgamepad.obj" "./usblib/device/usbdhidkeyb.obj" "./usblib/device/usbdhidmouse.obj" "./usblib/device/usbdmsc.obj" "./usblib/host/usbhaudio.obj" "./usblib/host/usbhhid.obj" "./usblib/host/usbhhidkeyboard.obj" "./usblib/host/usbhhidmouse.obj" "./usblib/host/usbhhub.obj" "./usblib/host/usbhmsc.obj" "./usblib/host/usbhostenum.obj" "./usblib/host/usbhscsi.obj" "./usblib/usbbuffer.obj" "./usblib/usbdesc.obj" "./usblib/usbdma.obj" "./usblib/usbkeyboardmap.obj" "./usblib/usbmode.obj" "./usblib/usbringbuf.obj" "./usblib/usbtick.obj" "./usblib/usbulpi.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+error #10056: symbol "send" redefined: first defined in "./interface/interface.obj"; redefined in "./ros_ethernet/adaptor.obj"
+ 
+ undefined first referenced   
+  symbol       in file        
+ --------- ----------------   
+ send_udp  ./ports/systick.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "project.out" not built
+ 
+>> Compilation failure
+makefile:308: recipe for target 'project.out' failed
+gmake[1]: *** [project.out] Error 1
+makefile:304: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../interface/interface.c"
+Invoking: ARM Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project" --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="interface/interface.d_raw" --obj_directory="interface"  "../interface/interface.c"
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\mem.h", line 75: warning #14-D: extra text after expected end of preprocessing directive
+"D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\project\utils\..\src\include\lwip\icmp.h", line 105: warning #233-D: declaration is not visible outside of function
+"../interface/interface.c", line 141: warning #225-D: function "lwip_init" declared implicitly
+"../interface/interface.c", line 383: warning #225-D: function "LWIP_stack_int" declared implicitly
+"../interface/interface.c", line 420: warning #161-D: declaration is incompatible with previous "LWIP_stack_int" (declared at line 383)
+"../interface/interface.c", line 475: warning #121-D: return value type does not match the function type
+Finished building: "../interface/interface.c"
+ 
+Building target: "project.out"
+Invoking: ARM Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"project.map" --heap_size=0 --stack_size=5000 -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_linkInfo.xml" --rom_model -o "project.out" "./chatter.obj" "./main.obj" "./print.obj" "./roscore.obj" "./tm4c123gh6pm_startup_ccs.obj" "./driverlib/adc.obj" "./driverlib/aes.obj" "./driverlib/can.obj" "./driverlib/comp.obj" "./driverlib/cpu.obj" "./driverlib/crc.obj" "./driverlib/des.obj" "./driverlib/eeprom.obj" "./driverlib/emac.obj" "./driverlib/epi.obj" "./driverlib/epi_workaround_ccs.obj" "./driverlib/flash.obj" "./driverlib/fpu.obj" "./driverlib/gpio.obj" "./driverlib/hibernate.obj" "./driverlib/i2c.obj" "./driverlib/interrupt.obj" "./driverlib/lcd.obj" "./driverlib/mpu.obj" "./driverlib/onewire.obj" "./driverlib/pwm.obj" "./driverlib/qei.obj" "./driverlib/shamd5.obj" "./driverlib/ssi.obj" "./driverlib/sw_crc.obj" "./driverlib/sysctl.obj" "./driverlib/sysexc.obj" "./driverlib/systick.obj" "./driverlib/timer.obj" "./driverlib/uart.obj" "./driverlib/udma.obj" "./driverlib/usb.obj" "./driverlib/watchdog.obj" "./interface/interface.obj" "./ports/buttons.obj" "./ports/config.obj" "./ports/enc28j60.obj" "./ports/led.obj" "./ports/perf.obj" "./ports/spi.obj" "./ports/sys_arch.obj" "./ports/systick.obj" "./ros_ethernet/Ethernet.obj" "./ros_ethernet/EthernetClient.obj" "./ros_ethernet/IPAddress.obj" "./ros_ethernet/adaptor.obj" "./ros_lib/ros/duration.obj" "./ros_lib/ros/time.obj" "./rosserial/rosserial_tivac/src/ros_lib/HardwareSerial.obj" "./rosserial/rosserial_tivac/src/ros_lib/Tivac_port.obj" "./rosserial/rosserial_tivac/src/ros_lib/tivac_hardware.obj" "./rosserial/rosserial_tivac/src/ros_lib/usb_serial_structs.obj" "./rosserial/rosserial_tivac/src/ros_lib/wiring.obj" "./src/api/sockets.obj" "./src/core/def.obj" "./src/core/dhcp.obj" "./src/core/dns.obj" "./src/core/etharp.obj" "./src/core/ethernetif.obj" "./src/core/init.obj" "./src/core/mem.obj" "./src/core/memp.obj" "./src/core/netif.obj" "./src/core/pbuf.obj" "./src/core/raw.obj" "./src/core/stats.obj" "./src/core/sys.obj" "./src/core/tcp.obj" "./src/core/tcp_in.obj" "./src/core/tcp_out.obj" "./src/core/timers.obj" "./src/core/udp.obj" "./src/core/ipv4/autoip.obj" "./src/core/ipv4/icmp.obj" "./src/core/ipv4/igmp.obj" "./src/core/ipv4/inet.obj" "./src/core/ipv4/inet_chksum.obj" "./src/core/ipv4/ip.obj" "./src/core/ipv4/ip_addr.obj" "./src/core/ipv4/ip_frag.obj" "./usblib/device/usbdaudio.obj" "./usblib/device/usbdbulk.obj" "./usblib/device/usbdcdc.obj" "./usblib/device/usbdcdesc.obj" "./usblib/device/usbdcomp.obj" "./usblib/device/usbdconfig.obj" "./usblib/device/usbddfu-rt.obj" "./usblib/device/usbdenum.obj" "./usblib/device/usbdhandler.obj" "./usblib/device/usbdhid.obj" "./usblib/device/usbdhidgamepad.obj" "./usblib/device/usbdhidkeyb.obj" "./usblib/device/usbdhidmouse.obj" "./usblib/device/usbdmsc.obj" "./usblib/host/usbhaudio.obj" "./usblib/host/usbhhid.obj" "./usblib/host/usbhhidkeyboard.obj" "./usblib/host/usbhhidmouse.obj" "./usblib/host/usbhhub.obj" "./usblib/host/usbhmsc.obj" "./usblib/host/usbhostenum.obj" "./usblib/host/usbhscsi.obj" "./usblib/usbbuffer.obj" "./usblib/usbdesc.obj" "./usblib/usbdma.obj" "./usblib/usbkeyboardmap.obj" "./usblib/usbmode.obj" "./usblib/usbringbuf.obj" "./usblib/usbtick.obj" "./usblib/usbulpi.obj" "./utils/cmdline.obj" "./utils/cpu_usage.obj" "./utils/eeprom_pb.obj" "./utils/flash_pb.obj" "./utils/isqrt.obj" "./utils/lwiplib.obj" "./utils/random.obj" "./utils/ringbuf.obj" "./utils/scheduler.obj" "./utils/sine.obj" "./utils/smbus.obj" "./utils/softi2c.obj" "./utils/softssi.obj" "./utils/softuart.obj" "./utils/spi_flash.obj" "./utils/uartstdio.obj" "./utils/ustdlib.obj" "../tm4c123gh6pm.cmd" "../driverlib/ccs/Debug/driverlib.lib" "../driverlib/rvmdk/driverlib.lib"  -llibc.a   ../driverlib/ewarm/Exe/driverlib.a  ../driverlib/gcc/libdriver.a 
+<Linking>
+Finished building target: "project.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'project.out' is up to date.
+
+**** Build Finished ****

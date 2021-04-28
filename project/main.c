@@ -68,7 +68,7 @@ u16_t port_1 =2020;
 u16_t port_remote =1010;
 
 
-extern void send(const uint8_t* data, int length) ;
+extern void send_udp(const uint8_t* data, int length) ;
 int main1()
 {
     ip_addr.addr = 0xfbb03014;

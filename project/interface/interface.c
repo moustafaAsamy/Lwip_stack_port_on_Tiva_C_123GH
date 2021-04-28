@@ -469,7 +469,7 @@ InitConsole(void)
 //
 //}
 
-void send(const uint8_t* data, int length)
+void send_udp(const uint8_t* data, int length)
 {
     struct pbuf *p;
     if (   (p= pbuf_alloc(PBUF_udp, length,PBUF_RAM) )== NULL) { return ERR_MEM;}  /* not enough space */           // Length of data only and payload point to the start of data

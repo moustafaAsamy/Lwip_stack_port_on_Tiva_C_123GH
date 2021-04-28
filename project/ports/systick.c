@@ -14,7 +14,7 @@
 extern void lwIPServiceTimers(void);
 extern void TCP_sent_buffer(void);
 extern void lwIPTimer(uint32_t ui32TimeMS) ;
-extern void send(const uint8_t* data, int length);
+extern void send_udp(const uint8_t* data, int length);
 extern uint8_t buffer[100];
 extern void  timer_start(void)
 {
@@ -58,7 +58,7 @@ void SysTickIntHandler(void)
         if (main_function >= 100 )
             {
                 main_function =0;
-                send(buffer,100);
+                send_udp(buffer,100);
                // TcpIp_MainFunction();
             }
             if ((leds_timer == 200  ) || (leds_timer > 200  ))
