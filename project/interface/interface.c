@@ -42,7 +42,9 @@
  uint8_t TCP_buffer_RX [1800]={0};
  uint8_t TCP_buffer_TX [1800]={0};
  extern struct netif g_sNetIF;
+ struct udp_pcb * Udp_ptr = NULL;
 
+   uint8_t buffer[100]={0};
  #define g_ui32SysClock_t          16000000
  #define SYSTEM_TICK_MS          10
  #define SYSTEM_TICK_S           100
@@ -467,4 +469,12 @@ InitConsole(void)
 //
 //}
 
+void send(const uint8_t* data, int length)
+{
+    struct pbuf *p;
+    if (   (p= pbuf_alloc(PBUF_udp, length,PBUF_RAM) )== NULL) { return ERR_MEM;}  /* not enough space */           // Length of data only and payload point to the start of data
 
+    memcpy(p->payload,(u8_t*)data ,length);
+    err_t n= udp_send(Udp_ptr, p);
+    pbuf_free(p);
+}

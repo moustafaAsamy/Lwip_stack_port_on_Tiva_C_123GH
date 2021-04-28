@@ -55,7 +55,7 @@ void SysTickIntHandler(void)
     //           app_task_tx_udp();
            }
 #endif
-        if (main_function >= 10 )
+        if (main_function >= 100 )
             {
                 main_function =0;
                 send(buffer,100);

@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../ethernet/src/utility/socket.cpp \
+../ethernet/src/utility/w5100.cpp 
+
+OBJS += \
+./ethernet/src/utility/socket.obj \
+./ethernet/src/utility/w5100.obj 
+
+CPP_DEPS += \
+./ethernet/src/utility/socket.d \
+./ethernet/src/utility/w5100.d 
+
+OBJS__QUOTED += \
+"ethernet\src\utility\socket.obj" \
+"ethernet\src\utility\w5100.obj" 
+
+CPP_DEPS__QUOTED += \
+"ethernet\src\utility\socket.d" \
+"ethernet\src\utility\w5100.d" 
+
+CPP_SRCS__QUOTED += \
+"../ethernet/src/utility/socket.cpp" \
+"../ethernet/src/utility/w5100.cpp" 
+
+

@@ -62,16 +62,15 @@ ip_addr_t ip_addr ;
 ip_addr_t Remote_ip_addr ={0xfbb03020} ;
 ip_addr_t net_mask = { 0xfbb00000};
 ip_addr_t  gw_addr = { 0xfbb02526};
-struct udp_pcb * Udp_ptr = NULL;
-uint8_t buffer[100]={0};
+extern struct udp_pcb * Udp_ptr  ;
+extern uint8_t buffer[100];
 u16_t port_1 =2020;
 u16_t port_remote =1010;
 
 
 extern void send(const uint8_t* data, int length) ;
-int main()
+int main1()
 {
-
     ip_addr.addr = 0xfbb03014;
     Remote_ip_addr.addr=htonl(Remote_ip_addr.addr);
     ECU_int(&g_sNetIF, 0 ,  &ip_addr, &net_mask, &gw_addr);
@@ -99,15 +98,15 @@ int main()
 
 
 
-void send(const uint8_t* data, int length)
-{
-    struct pbuf *p;
-    if (   (p= pbuf_alloc(PBUF_udp, length,PBUF_RAM) )== NULL) { return ERR_MEM;}  /* not enough space */           // Length of data only and payload point to the start of data
-
-    memcpy(p->payload,(u8_t*)data ,length);
-    err_t n= udp_send(Udp_ptr, p);
-    pbuf_free(p);
-}
+//void send(const uint8_t* data, int length)
+//{
+//    struct pbuf *p;
+//    if (   (p= pbuf_alloc(PBUF_udp, length,PBUF_RAM) )== NULL) { return ERR_MEM;}  /* not enough space */           // Length of data only and payload point to the start of data
+//
+//    memcpy(p->payload,(u8_t*)data ,length);
+//    err_t n= udp_send(Udp_ptr, p);
+//    pbuf_free(p);
+//}
 
 
 

@@ -1,0 +1,68 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../ethernet/src/Dhcp.cpp \
+../ethernet/src/Dns.cpp \
+../ethernet/src/Ethernet.cpp \
+../ethernet/src/EthernetClient.cpp \
+../ethernet/src/EthernetServer.cpp \
+../ethernet/src/EthernetUdp.cpp \
+../ethernet/src/IPAddress.cpp \
+../ethernet/src/SPI.cpp 
+
+OBJS += \
+./ethernet/src/Dhcp.obj \
+./ethernet/src/Dns.obj \
+./ethernet/src/Ethernet.obj \
+./ethernet/src/EthernetClient.obj \
+./ethernet/src/EthernetServer.obj \
+./ethernet/src/EthernetUdp.obj \
+./ethernet/src/IPAddress.obj \
+./ethernet/src/SPI.obj 
+
+CPP_DEPS += \
+./ethernet/src/Dhcp.d \
+./ethernet/src/Dns.d \
+./ethernet/src/Ethernet.d \
+./ethernet/src/EthernetClient.d \
+./ethernet/src/EthernetServer.d \
+./ethernet/src/EthernetUdp.d \
+./ethernet/src/IPAddress.d \
+./ethernet/src/SPI.d 
+
+OBJS__QUOTED += \
+"ethernet\src\Dhcp.obj" \
+"ethernet\src\Dns.obj" \
+"ethernet\src\Ethernet.obj" \
+"ethernet\src\EthernetClient.obj" \
+"ethernet\src\EthernetServer.obj" \
+"ethernet\src\EthernetUdp.obj" \
+"ethernet\src\IPAddress.obj" \
+"ethernet\src\SPI.obj" 
+
+CPP_DEPS__QUOTED += \
+"ethernet\src\Dhcp.d" \
+"ethernet\src\Dns.d" \
+"ethernet\src\Ethernet.d" \
+"ethernet\src\EthernetClient.d" \
+"ethernet\src\EthernetServer.d" \
+"ethernet\src\EthernetUdp.d" \
+"ethernet\src\IPAddress.d" \
+"ethernet\src\SPI.d" 
+
+CPP_SRCS__QUOTED += \
+"../ethernet/src/Dhcp.cpp" \
+"../ethernet/src/Dns.cpp" \
+"../ethernet/src/Ethernet.cpp" \
+"../ethernet/src/EthernetClient.cpp" \
+"../ethernet/src/EthernetServer.cpp" \
+"../ethernet/src/EthernetUdp.cpp" \
+"../ethernet/src/IPAddress.cpp" \
+"../ethernet/src/SPI.cpp" 
+
+
