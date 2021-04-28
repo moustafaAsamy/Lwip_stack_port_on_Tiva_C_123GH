@@ -1,7 +1,8 @@
 # FIXED
 
 main.obj: ../main.c
-main.obj: ../interface/lwip_int.h
+main.obj: ../ports/config.h
+main.obj: ../ports/../interface/lwip_int.h
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/lwiplib.h
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/opt.h
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/lwipopts.h
@@ -35,9 +36,13 @@ main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../sr
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/tcp_impl.h
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/timers.h
 main.obj: D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/etharp.h
+main.obj: C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/string.h
+main.obj: C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/_ti_config.h
+main.obj: C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/linkage.h
 
 ../main.c: 
-../interface/lwip_int.h: 
+../ports/config.h: 
+../ports/../interface/lwip_int.h: 
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/lwiplib.h: 
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/opt.h: 
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/lwipopts.h: 
@@ -71,3 +76,6 @@ D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/tcp_impl.h: 
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/timers.h: 
 D:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH/project/utils/../src/include/lwip/etharp.h: 
+C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/string.h: 
+C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/_ti_config.h: 
+C:/ti/ccs900/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include/linkage.h: 

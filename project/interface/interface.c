@@ -367,7 +367,7 @@ void ECU_int(struct netif *netif, uint8_t controller_id ,  ip_addr_t *ipaddr, ip
         spi_init();
         ButtonsInit();
         enc_init(mac);
-        led_on(blue);
+        led_on(yellow);
         timer_start();
         //netif->ctr_ID =controller_id;
         netif->hwaddr[0] = mac[0];
@@ -381,7 +381,8 @@ void ECU_int(struct netif *netif, uint8_t controller_id ,  ip_addr_t *ipaddr, ip
         LWIP_stack_int(netif, controller_id ,  ipaddr, netmask,gw);
         InitConsole();
         UARTprintf("55");
-        led_on(red);
+        led_off();
+        led_on(yellow);
 }
 
 void SimpleDelay_2(void)
@@ -395,7 +396,14 @@ void SimpleDelay_2(void)
 void UDP_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p,ip_addr_t *addr, u16_t port)
 {
     led_off();
+#if ECU1
     led_on(red);
+#endif
+
+#if ECU2
+    led_on(blue);
+#endif
+
 //    ( Udp_buffer_RX  , (u8_t *) p->payload,   p->len);
 //
 //    RemoteAddrPtr.TcpIp_SockAddrInetType_t.addr[0] =(uint32)pcb->remote_ip.addr ;
@@ -452,6 +460,11 @@ InitConsole(void)
 }
 
 
-
+//void UDP_CONNECT( TcpIp_SocketIdType SocketId  , TcpIp_SockAddrType * RemoteAddrPtr_udp)
+//{
+//
+//udp_connect( (struct udp_pcb *) sockets_list[SocketId].ptr_connection  , (ip_addr_t *) (&RemoteAddrPtr_udp->TcpIp_SockAddrInetType_t.addr) ,  RemoteAddrPtr_udp->TcpIp_SockAddrInetType_t.port );
+//
+//}
 
 

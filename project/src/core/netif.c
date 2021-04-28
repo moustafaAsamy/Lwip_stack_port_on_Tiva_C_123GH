@@ -181,9 +181,9 @@ netif_add(struct netif *netif, ip_addr_t *ipaddr, ip_addr_t *netmask,
   netif_set_addr(netif, ipaddr, netmask, gw);
 
   /* call user specified initialization function for netif */
-  if (init(netif) != ERR_OK) {
-    return NULL;
-  }
+//  if (init(netif) != ERR_OK) {
+//    return NULL;
+//  }
 
   /* add this netif to the list */
   netif->next = netif_list;

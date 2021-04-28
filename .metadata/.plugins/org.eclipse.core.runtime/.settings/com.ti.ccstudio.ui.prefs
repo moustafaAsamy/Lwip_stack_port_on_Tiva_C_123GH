@@ -1,6 +1,7 @@
 CCSResourceExplorerContentProvider.CCS_IMAGE_INFO=C\:/ti/ccsv7|7.4.0.201711260800
-CCStudioUIStartup.CCS_IMAGE_INFO=C\:/ti/ccsv7|7.4.0.201711260800
-com.ti.ccstudio.ui.CCS_INSTALL_LOCATION=C\:/ti/ccsv7
-com.ti.ccstudio.ui.CCS_VERSION=7.4.0.201711260800
+CCStudioUIStartup.CCS_IMAGE_INFO=D\:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH|C\:/ti/ccs900/ccs|9.0.0.00018
+com.ti.ccstudio.ui.CCS_INSTALL_LOCATION=C\:/ti/ccs900/ccs
+com.ti.ccstudio.ui.CCS_VERSION=9.0.0.00018
+com.ti.ccstudio.ui.CCS_WORKSPACE_LOCATION=D\:/lwip_stack_repo/Lwip_stack_port_on_Tiva_C_123GH
 com.ti.ccstudio.ui.IS_NOT_FIRST_CCS_LAUNCH=true
 eclipse.preferences.version=1

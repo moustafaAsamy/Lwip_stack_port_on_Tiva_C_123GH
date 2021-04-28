@@ -14,10 +14,11 @@
 extern void lwIPServiceTimers(void);
 extern void TCP_sent_buffer(void);
 extern void lwIPTimer(uint32_t ui32TimeMS) ;
-
+extern void send(const uint8_t* data, int length);
+extern uint8_t buffer[100];
 extern void  timer_start(void)
 {
-    SysTickPeriodSet(/*systic_rate*/10);
+    SysTickPeriodSet(systic_rate);
     IntMasterEnable();
     SysTickIntEnable();
     SysTickEnable();
@@ -44,18 +45,20 @@ void SysTickIntHandler(void)
 #if ECU1
     if(g_ui32_APP_Timer >= 1500)
     {
-        app_task_tx_tcp();
+       // app_task_tx_tcp();
+        //send(buffer,100);
         g_ui32_APP_Timer=0;
     }
         if  (UDp_counter == 3000 )
            {
                UDp_counter =0;
-               app_task_tx_udp();
+    //           app_task_tx_udp();
            }
 #endif
         if (main_function >= 10 )
             {
                 main_function =0;
+                send(buffer,100);
                // TcpIp_MainFunction();
             }
             if ((leds_timer == 200  ) || (leds_timer > 200  ))

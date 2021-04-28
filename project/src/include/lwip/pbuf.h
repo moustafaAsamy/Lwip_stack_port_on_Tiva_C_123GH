@@ -49,6 +49,7 @@ extern "C" {
 
 typedef enum {
   PBUF_TRANSPORT,
+  PBUF_udp,
   PBUF_IP,
   PBUF_LINK,
   PBUF_RAW

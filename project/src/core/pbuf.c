@@ -78,7 +78,7 @@
 #endif
 
 #include <string.h>
-
+#define UDP_HLEN 8
 #define SIZEOF_STRUCT_PBUF        LWIP_MEM_ALIGN_SIZE(sizeof(struct pbuf))
 /* Since the pool is created in memp, PBUF_POOL_BUFSIZE will be automatically
    aligned there. Therefore, PBUF_POOL_BUFSIZE_ALIGNED can be used here. */
@@ -217,6 +217,10 @@ pbuf_alloc(pbuf_layer layer, u16_t length, pbuf_type type)
     /* add room for transport (often TCP) layer header */
     offset = PBUF_LINK_HLEN + PBUF_IP_HLEN + PBUF_TRANSPORT_HLEN;
     break;
+  case PBUF_udp:
+          /* add room for transport (often UDP) layer header */
+          offset = PBUF_LINK_HLEN + PBUF_IP_HLEN + UDP_HLEN;
+          break;
   case PBUF_IP:
     /* add room for IP layer header */
     offset = PBUF_LINK_HLEN + PBUF_IP_HLEN;
