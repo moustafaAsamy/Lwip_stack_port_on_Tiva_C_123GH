@@ -13,18 +13,19 @@ CMD_SRCS += \
 ../tm4c123gh6pm.cmd 
 
 C_SRCS += \
-../main.c \
+../1.c \
 ../print.c \
 ../roscore.c \
 ../tm4c123gh6pm_startup_ccs.c 
 
 C_DEPS += \
-./main.d \
+./1.d \
 ./print.d \
 ./roscore.d \
 ./tm4c123gh6pm_startup_ccs.d 
 
 OBJS += \
+./1.obj \
 ./chatter.obj \
 ./main.obj \
 ./print.obj \
@@ -36,6 +37,7 @@ CPP_DEPS += \
 ./main.d 
 
 OBJS__QUOTED += \
+"1.obj" \
 "chatter.obj" \
 "main.obj" \
 "print.obj" \
@@ -43,7 +45,7 @@ OBJS__QUOTED += \
 "tm4c123gh6pm_startup_ccs.obj" 
 
 C_DEPS__QUOTED += \
-"main.d" \
+"1.d" \
 "print.d" \
 "roscore.d" \
 "tm4c123gh6pm_startup_ccs.d" 
@@ -52,14 +54,14 @@ CPP_DEPS__QUOTED += \
 "chatter.d" \
 "main.d" 
 
-CPP_SRCS__QUOTED += \
-"../chatter.cpp" \
-"../main.cpp" 
-
 C_SRCS__QUOTED += \
-"../main.c" \
+"../1.c" \
 "../print.c" \
 "../roscore.c" \
 "../tm4c123gh6pm_startup_ccs.c" 
+
+CPP_SRCS__QUOTED += \
+"../chatter.cpp" \
+"../main.cpp" 
 
 

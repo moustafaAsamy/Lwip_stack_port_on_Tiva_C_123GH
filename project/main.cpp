@@ -81,13 +81,13 @@ unsigned long millis()
    ros::Publisher chatter("chatter", &str_msg);
    char hello[13] = "Hello world!";
 
-   int main(void)
-   {
+//   int main(void)
+//   {
      // TivaC application specific code
      //FPUEnable();
      //MAP_FPULazyStackingEnable();
      // TivaC system clock configuration. Set to 80MHz.
-    MAP_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ | SYSCTL_OSC_MAIN);
+   // MAP_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ | SYSCTL_OSC_MAIN);
 
      // ROS nodehandle initialization and topic registration
 //     nh.initNode();
@@ -105,7 +105,7 @@ unsigned long millis()
 //       // Delay for a bit.
 //       nh.getHardware()->delay(100);
 //     }
-    }
+ //   }
 
 
 //#include <stdbool.h>
