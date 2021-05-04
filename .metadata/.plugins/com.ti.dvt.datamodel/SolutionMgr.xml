@@ -5,7 +5,7 @@
    <string>defaultSolution</string>
    <void method="set">
     <object idref="SolutionManager$PersistState0"/>
-    <string>C:\ti\ccs900\ccs\ccs_base\dvt_4.1.0.201902061603\CodeGen\solutions\CodeGenCoverage</string>
+    <string>D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\dvt\AnalysisSolutionsTemp\AnalysisSolution1619607274391\null</string>
    </void>
   </void>
  </object>
@@ -14,10 +14,10 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\dvt\AnalysisSolutionsTemp\AnalysisSolution1619530302716\null</string>
+   <string>C:\ti\ccs900\ccs\ccs_base\dvt_4.1.0.201902061603\CodeGen\solutions\CodeGenCoverage</string>
   </void>
   <void method="add">
-   <string>C:\ti\ccs900\ccs\ccs_base\dvt_4.1.0.201902061603\CodeGen\solutions\CodeGenCoverage</string>
+   <string>D:\lwip_stack_repo\Lwip_stack_port_on_Tiva_C_123GH\dvt\AnalysisSolutionsTemp\AnalysisSolution1619607274391\null</string>
   </void>
  </void>
 </void>
